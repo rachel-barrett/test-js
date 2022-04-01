@@ -6,12 +6,17 @@ This is a minimal javascript library for unit testing.
 
 (This example uses typescript but you could just as easily use javascript.)
 
+Save the library to your project with:
+```
+npm install --save-dev @rlb53/test
+```
+
 Create a `test` directory with an `index.ts` file init with contents
 
 ```ts
 //index.ts
 
-import * as test from "test"
+import * as test from "@rlb53/test"
 
 import "./TestSuite1"
 
@@ -23,7 +28,7 @@ Create a test suite file e.g.
 ```ts
 //TestSuite1.ts
 
-import {suite, group, test, assertEquals} from "test"
+import {suite, group, test, assertEquals} from "@rlb53/test"
 
 suite(module.filename)(() => {
   group("function foo should", () => {
