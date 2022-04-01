@@ -42,7 +42,7 @@ suite(module.filename)(() => {
 
 Add a `test` key to your package.json that runs:
 
-```bash
+```
 cd test; ts-node index.ts
 ```
 

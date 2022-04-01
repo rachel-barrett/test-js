@@ -1,8 +1,12 @@
 {
-  "name": "test",
+  "name": "@rlb53/test",
   "version": "1.0.0",
   "description": "A minimal unit testing library",
-  "main": "target/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "format": "prettier --write .",
     "build": "tsc --build",
@@ -13,8 +17,10 @@
     "url": "git+ssh://git@github.com/rachel-barrett/test-js.git"
   },
   "keywords": [
+    "test",
     "testing",
-    "unit"
+    "unit",
+    "typescript"
   ],
   "author": "Rachel Barrett",
   "license": "ISC",
