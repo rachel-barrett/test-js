@@ -56,7 +56,7 @@ function testResult(result: {
 }): void {
     const { name, testPassed, message } = result;
     const marker = testPassed ? green + "/" : red + "X";
-    console.log(marker, name, reset);
+    console.log(`${marker} ${name}${reset}`);
     if (message) {
         console.group();
         console.group();
