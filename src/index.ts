@@ -6,8 +6,8 @@ const red = "\x1b[31m";
 const yellow = "\x1b[33m";
 const reset = "\x1b[0m";
 
-export var testFailures: number = 0;
-export var testPasses: number = 0;
+var testFailures: number = 0;
+var testPasses: number = 0;
 
 // grouping
 
