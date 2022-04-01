@@ -11,8 +11,8 @@
     "url": "git+ssh://git@github.com/rachel-barrett/test-js.git"
   },
   "keywords": [
-    "[testing",
-    "unit]"
+    "testing",
+    "unit"
   ],
   "author": "Rachel Barrett",
   "license": "ISC",
