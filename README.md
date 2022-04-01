@@ -29,9 +29,9 @@ Create a test suite file, also in the `test` directory e.g.
 ```ts
 //TestSuite1.ts
 
-import {suite, group, test, assertEquals} from "@rlb53/test";
+import {group, test, assertEquals} from "@rlb53/test";
 
-suite(module.filename)(() => {
+group(module.filename)(() => {
     group("function foo should:")(() => {
         test("return succes when bar")(() => {
             const expected = 1;
