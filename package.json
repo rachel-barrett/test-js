@@ -4,6 +4,8 @@
   "description": "A minimal unit testing library",
   "main": "target/index.js",
   "scripts": {
+    "format": "prettier --write .",
+    "build": "tsc --build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +23,8 @@
   },
   "homepage": "https://github.com/rachel-barrett/test-js#readme",
   "devDependencies": {
+    "@types/node": "^17.0.23",
+    "prettier": "^2.6.1",
     "typescript": "^4.6.3"
   }
 }
