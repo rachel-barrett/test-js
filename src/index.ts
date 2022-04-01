@@ -13,19 +13,16 @@ var testPasses: number = 0;
 
 export function group(name: string): (tests: () => void) => void {
     return (tests) => {
-        console.log(`${yellow}${name}${reset}`);
+        const relativeFilenameOrName = relativeFilename(name);
+        console.log(`${yellow}${relativeFilenameOrName}${reset}`);
         console.group();
         tests();
         console.groupEnd();
     };
 }
 
-export function relativeFilename(filename: string): string {
+function relativeFilename(filename: string): string {
     return path.relative(process.cwd(), filename);
-}
-
-export function suite(filename: string): (tests: () => void) => void {
-    return group(relativeFilename(filename));
 }
 
 // tests
