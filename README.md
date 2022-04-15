@@ -8,7 +8,7 @@ This is a minimal javascript library for unit testing.
 
 Save the library to your project as a dev dependency, with:
 ```
-npm install --save-dev @rlb53/test
+npm install --save-dev @rachel-barrett/test-js
 ```
 
 Create a `test` directory. Create an `index.ts` file in it, with contents:
@@ -16,7 +16,7 @@ Create a `test` directory. Create an `index.ts` file in it, with contents:
 ```ts
 //index.ts
 
-import * as test from "@rlb53/test";
+import * as test from "@rachel-barrett/test-js";
 
 import "./TestSuite1";
 
@@ -29,7 +29,7 @@ Create a test suite file, also in the `test` directory e.g.
 ```ts
 //TestSuite1.ts
 
-import {group, test, assertEquals} from "@rlb53/test";
+import {group, test, assertEquals} from "@rachel-barrett/test-js";
 
 group(module.filename)(() => {
     group("function foo should:")(() => {
