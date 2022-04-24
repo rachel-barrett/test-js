@@ -1,0 +1,2 @@
+/Use an error exit code if the test fails
+Try something like `find . -name '*.ts' | xargs -n 1 ts-node` but finding a way to report test results
