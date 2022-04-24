@@ -1,5 +1,5 @@
 import * as path from "path";
-import * as node from "util";
+import * as assert from "assert";
 
 const green = "\x1b[32m";
 const red = "\x1b[31m";
@@ -75,20 +75,8 @@ function testResult(result: {
 
 export function assertEquals<A>(result: { expected: A; actual: A }): boolean {
     const { expected, actual } = result;
-
-    return assert(node.isDeepStrictEqual(expected, actual))(
-        `expected: ${JSON.stringify(expected, null, 2)}
-actual: ${JSON.stringify(actual, null, 2)}`
-    );
-}
-
-export function assert(result: boolean): (message: string) => boolean {
-    return (message) => {
-        if (!result) {
-            throw new Error(message);
-        }
-        return result;
-    };
+    assert.deepStrictEqual(actual, expected);
+    return true;
 }
 
 // results
